@@ -1,0 +1,14 @@
+.cell {
+    /* center the cell content */
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   font-family: Arial;
+   font-size: 1.4rem;
+   font-weight: bold;
+   background: grey;
+ }
+
+ .active {
+  background: teal;
+}
