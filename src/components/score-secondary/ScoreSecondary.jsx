@@ -11,7 +11,7 @@ const ScoreSecondary = () => {
             <div className="grid">
                 {secondaryScore.map((scoreSecondaryItem, i) => {
                     const value = i
-
+                    
                     return <ScoreSecondaryItem 
                                 score={secondaryScore[value]}
                                 active={value === selected}
