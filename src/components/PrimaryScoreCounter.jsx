@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import './scoreCounter.css';
 
 export function maxScore(score, setScore) {
-    if (score > 11) {
-        setScore = 12
+    if (score > 14) {
+        setScore = 15
     } else {
-        setScore(score + 4)
+        setScore(score + 5)
     };
 }
 
@@ -15,7 +15,7 @@ export function minScore(score, setScore) {
     if (score < 1) {
         setScore = 0
     } else {
-        setScore(score - 4)
+        setScore(score - 5)
     };
 }
 

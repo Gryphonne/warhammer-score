@@ -4,7 +4,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import './secondaryDropdown.css';
 
 export default function ControllableStates() {
-  const [mission, setMission] = useState('');
+  const [mission, setMission] = useState(null);
 
   return (
     <div className="mission-text">
@@ -19,7 +19,7 @@ export default function ControllableStates() {
           setMission(newMission);
         }}
       />
-      <div className="mission-text">{`${mission !== null ? `${mission.category}: ${mission.description}` : 'Select a Secondary Objective'}`}</div>
+      <div className="mission-text">{(mission !== null) ? `${mission.category} : ${mission.description}` : 'Select a Secondary Objective'}</div>
     </div>
   );
 }
