@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
-import ScoreSecondary from './components/score-secondary/ScoreSecondary';
-import SecondaryDropdown from './components/secondary-dropdown/SecondaryDropdown';
+import ScoreCounter from './components/ScoreCounter';
+import SecondaryDropdown from "./components/SecondaryDropdown";
+import { Card } from '@mui/material';
+import PrimaryScoreCounter from './components/PrimaryScoreCounter';
 
 function App() {
 
@@ -9,53 +11,28 @@ function App() {
     <div className="App">
       <div className="player-container">
         <div className="score-container">
-          <div className="item">
-            <SecondaryDropdown/>
-          </div>
-          <div className="item">
-            <ScoreSecondary />
-          </div>
-          <div className="item">
-            <SecondaryDropdown/>
-            {score}
-          </div>
-          <div className="item">
-            <ScoreSecondary/>
-          </div>
-          <div className="item">
-            <SecondaryDropdown/>
-          </div>
-          <div className="item">
-            <ScoreSecondary/>
-          </div>
+        <h3>Battle Round 2</h3><PrimaryScoreCounter/>
+        <h3>Battle Round 3</h3><PrimaryScoreCounter/>
+        <h3>Battle Round 4</h3><PrimaryScoreCounter/>
+        <h3>Battle Round 5</h3><PrimaryScoreCounter/>
+          <SecondaryDropdown/>
+          <ScoreCounter/>
+          <SecondaryDropdown/>
+          <ScoreCounter/>
+          <SecondaryDropdown/>
+          <ScoreCounter/>
         </div>
         <div className="score-container">
-          <div className="item">
-            <SecondaryDropdown/>
-          </div>
-          <div className="item">
-            <ScoreSecondary/>
-          </div>
-          <div className="item">
-            <SecondaryDropdown/>
-          </div>
-          <div className="item">
-            <ScoreSecondary/>
-          </div>
-          <div className="item">
-            <SecondaryDropdown/>
-          </div>
-          <div className="item">
-            <ScoreSecondary/>
-          </div>   
-        </div>  
-      </div>
-      <div className="total-score-container">
-        <div className="total-score-item">
-          <h1>0</h1>
-        </div>
-        <div className="total-score-item">
-          <h1>"hi"</h1>
+        <h3>Battle Round 2</h3><PrimaryScoreCounter/>
+        <h3>Battle Round 3</h3><PrimaryScoreCounter/>
+        <h3>Battle Round 4</h3><PrimaryScoreCounter/>
+        <h3>Battle Round 5</h3><PrimaryScoreCounter/>
+          <SecondaryDropdown/>
+          <ScoreCounter/>
+          <SecondaryDropdown/>
+          <ScoreCounter/>
+          <SecondaryDropdown/>
+          <ScoreCounter/>
         </div>
       </div>
     </div>

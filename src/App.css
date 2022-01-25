@@ -3,18 +3,19 @@
 }
 
 .player-container {
-  background-color: #585e6b;
+  background-color: #eeeeee;
   display: grid;
   grid-template-columns: auto auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .score-container {
-  background-color: #585e6b;
+  background-color: #eeeeee;
   display: grid;
   grid-template-columns: auto auto;
   padding: 0.5rem;
   grid-gap: 1rem;
+  text-align: left;
 }
 
 .total-score-container {
