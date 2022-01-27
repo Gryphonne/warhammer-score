@@ -1,7 +1,9 @@
 import { Box, Button, Container, Paper } from '@mui/material';
-import { Add, Clear, Remove } from '@mui/icons-material';
-import React, { useState } from 'react';
-import './scoreCounter.css';
+import { Add, Remove } from '@mui/icons-material';
+import React, { useState, useContext } from 'react';
+import './secondaryScoreCounter.css';
+
+import { SecondaryTotalContext } from '../context/SecondaryTotalContext';
 
 export function maxScore(score, setScore) {
     if (score > 14) {
@@ -19,8 +21,9 @@ export function minScore(score, setScore) {
     };
 }
 
-function ScoreCounter() {
+const SecondaryScoreCounter = () => {
     const [score, setScore] = useState(0);
+    //const { incrementSecondaryTotal, decrementSecondaryTotal } = useContext(SecondaryTotalContext);
 
     return (
         <Container>
@@ -29,7 +32,7 @@ function ScoreCounter() {
                     <Remove />
                 </Button>
                 <Paper className="ver hor big-font">{score}</Paper>
-                <Button data-testid="incrementHome" onClick={() => maxScore(score, setScore)} variant="contained" color="primary">
+                <Button data-testid="incrementHome" onClick={() => minScore(score, setScore)} variant="contained" color="primary">
                     <Add />
                 </Button>
             </Box>
@@ -37,4 +40,4 @@ function ScoreCounter() {
     );
 }
 
-export default ScoreCounter;
+export default SecondaryScoreCounter;

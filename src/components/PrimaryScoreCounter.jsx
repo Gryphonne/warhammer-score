@@ -1,7 +1,7 @@
 import { Box, Button, Container, Paper } from '@mui/material';
 import { Add, Clear, Remove } from '@mui/icons-material';
 import React, { useState } from 'react';
-import './scoreCounter.css';
+import './secondaryScoreCounter.css';
 
 export function maxScore(score, setScore) {
     if (score > 14) {
