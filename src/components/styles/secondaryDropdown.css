@@ -1,7 +1,10 @@
 .mission-text {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    width: 40rem;
-    height: 150px;
-    text-align: justify;
     font-size: 14px;
+}
+
+.secondary-dropdown__input {
+    border: solid white 2px;
 }

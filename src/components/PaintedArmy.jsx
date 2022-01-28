@@ -1,5 +1,4 @@
-import { Box, Button, Container, Paper, Checkbox } from '@mui/material';
-import { Add, Clear, Remove } from '@mui/icons-material';
+import { Box, Container, Checkbox } from '@mui/material';
 import React, { useState, useContext } from 'react';
 import './styles/secondaryScoreCounter.css';
 
@@ -30,7 +29,7 @@ export default function PaintedArmy() {
     return (
         <Container>
             <Box className="flex-container">
-            <Checkbox onChange={checkPainted} />
+            <Checkbox className="checkbox" onChange={checkPainted} />
             </Box>
         </Container>
     );
