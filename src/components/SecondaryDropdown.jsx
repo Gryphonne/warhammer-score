@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import './secondaryDropdown.css';
+import './styles/secondaryDropdown.css';
 
 export default function ControllableStates() {
   const [mission, setMission] = useState(null);

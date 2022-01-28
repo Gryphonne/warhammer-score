@@ -1,32 +1,20 @@
 import { Box, Button, Container, Paper } from '@mui/material';
 import { Add, Clear, Remove } from '@mui/icons-material';
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import './styles/secondaryScoreCounter.css';
 
-import { PrimaryScoreContext } from '../context/PrimaryScoreContext';
-
-export default function PrimaryScoreCounter() {
-    const [score, setScore] = useState(0);
-    const [count, setCount] = useContext(PrimaryScoreContext);
-
+export default function CommandPoints() {
+    const [commandPoints, setCommandPoints] = useState(0);
+    
     const increment = () => {
-        
-        if (score > 14) {
-            //
-        } else {
-            setScore(score + 5)
-            setCount(count + 5);
-        };
-
+        setCommandPoints(commandPoints + 1)
     };
 
     const decrement = () => {
-        
-        if (score < 1) {
+        if (commandPoints < 1) {
             //
         } else {
-            setScore(score - 5)
-            setCount(count - 5);
+            setCommandPoints(commandPoints - 1)
         };
     };
 
@@ -36,7 +24,7 @@ export default function PrimaryScoreCounter() {
                 <Button className="button" onClick={decrement} variant="contained" color="primary">
                     <Remove />
                 </Button>
-                <Paper className="ver hor big-font">{score}</Paper>
+                <Paper className="ver hor big-font">{commandPoints}</Paper>
                 <Button className="button" onClick={increment} variant="contained" color="primary">
                     <Add />
                 </Button>

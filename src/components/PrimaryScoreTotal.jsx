@@ -1,7 +1,7 @@
 import { Box, Container, Paper } from '@mui/material';
 import React, { useContext } from 'react';
 
-import './secondaryScoreTotal.css'
+import './styles/secondaryScoreTotal.css'
 
 import { PrimaryScoreContext } from '../context/PrimaryScoreContext';
 

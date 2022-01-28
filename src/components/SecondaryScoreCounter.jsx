@@ -1,7 +1,7 @@
 import { Box, Button, Container, Paper } from '@mui/material';
 import { Add, Remove } from '@mui/icons-material';
 import React, { useState, useContext } from 'react';
-import './secondaryScoreCounter.css';
+import './styles/secondaryScoreCounter.css';
 
 import { SecondaryScoreContext } from '../context/SecondaryScoreContext';
 
