@@ -52,7 +52,7 @@ const SECONDARY_OBJECTIVES = [
   },
   {
     category: "Purge the Enemy",
-    label: "Auric Mortalis",
+    label: "Auric Mortalis (Adeptus Custodes)",
     description: "If you select this objective, then before the battle, you must select one unit from your opponent’s army that has the PRIMARCH or SUPREME COMMANDER keyword to be marked for death. If no such unit exists, select one unit from your opponent’s army with the highest points value to be marked for death."
   },
   {
