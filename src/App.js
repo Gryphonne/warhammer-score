@@ -22,7 +22,7 @@ function App() {
       <div className="App">
         <div className="player-container">
           <div className="score-container">
-            <h3>Playernameplaceholder</h3><CommandPoints />
+            <h3>Command Points Playername1</h3><CommandPoints />
             <h3>Battle Round 2</h3><PrimaryScoreCounter />
             <h3>Battle Round 3</h3><PrimaryScoreCounter />
             <h3>Battle Round 4</h3><PrimaryScoreCounter />
@@ -41,7 +41,7 @@ function App() {
           </div>
 
           <div className="score-container">
-          <h3>Playernameplaceholder</h3><CommandPoints />
+          <h3>Command Points Playername2</h3><CommandPoints />
             <h3>Battle Round 2</h3><PrimaryScoreCounter />
             <h3>Battle Round 3</h3><PrimaryScoreCounter />
             <h3>Battle Round 4</h3><PrimaryScoreCounter />
