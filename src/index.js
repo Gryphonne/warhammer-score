@@ -5,9 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import SecondaryTotalProvider from './context/SecondaryTotalContext';
-
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -22,9 +19,7 @@ const theme = createTheme({
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-    <SecondaryTotalProvider>
-    <App />
-    </SecondaryTotalProvider>
+      <App />
     </ThemeProvider>,
   </React.StrictMode>,
   document.getElementById('root')

@@ -3,41 +3,44 @@ import { Add, Remove } from '@mui/icons-material';
 import React, { useState, useContext } from 'react';
 import './secondaryScoreCounter.css';
 
-import { SecondaryTotalContext } from '../context/SecondaryTotalContext';
+import { SecondaryScoreContext } from '../context/SecondaryScoreContext';
 
-export function maxScore(score, setScore) {
-    if (score > 14) {
-        setScore = 15
-    } else {
-        setScore(score + 1)
-    };
-}
-
-export function minScore(score, setScore) {
-    if (score < 1) {
-        setScore = 0
-    } else {
-        setScore(score - 1)
-    };
-}
-
-const SecondaryScoreCounter = () => {
+export default function SecondaryScoreCounter() {
     const [score, setScore] = useState(0);
-    //const { incrementSecondaryTotal, decrementSecondaryTotal } = useContext(SecondaryTotalContext);
+    const [count, setCount] = useContext(SecondaryScoreContext);
+
+    const increment = () => {
+        
+        if (score > 14) {
+            //
+        } else {
+            setScore(score + 1)
+            setCount(count + 1);
+        };
+
+    };
+
+    const decrement = () => {
+        
+        if (score < 1) {
+            //
+        } else {
+            setScore(score - 1)
+            setCount(count - 1);
+        };
+    };
 
     return (
         <Container>
             <Box className="flex-container">
-                <Button className="button" data-testid="decrement" onClick={() => minScore(score, setScore)} variant="contained" color="primary">
+                <Button className="button" onClick={decrement} variant="contained" color="primary">
                     <Remove />
                 </Button>
                 <Paper className="ver hor big-font">{score}</Paper>
-                <Button data-testid="incrementHome" onClick={() => minScore(score, setScore)} variant="contained" color="primary">
+                <Button className="button" onClick={increment} variant="contained" color="primary">
                     <Add />
                 </Button>
             </Box>
         </Container>
     );
 }
-
-export default SecondaryScoreCounter;

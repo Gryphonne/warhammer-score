@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+
+.vert {
+    padding: 0 1rem;
+    border-radius:5px;
+}
+
+.hort {
+    margin: 0 1rem;
+    width:70px;
+}
+
+.big-font {
+    font-size: 1.7rem;
+}
+
+.button {
+    color: black;
+}
+
+.m-t-1 {
+    margin-top: 1rem;
+}

@@ -1,15 +1,17 @@
 import { Box, Container, Paper } from '@mui/material';
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 
-import { SecondaryTotalContext } from '../context/SecondaryTotalContext';
+import './secondaryScoreTotal.css'
 
-function SecondaryScoreTotal() {
-    const { secondaryTotal } = useContext(SecondaryTotalContext);
+import { SecondaryScoreContext } from '../context/SecondaryScoreContext';
+
+const SecondaryScoreTotal = () => {
+    const [count] = useContext(SecondaryScoreContext);
 
     return (
         <Container>
             <Box className="flex-container">
-                <Paper className="ver hor big-font">{secondaryTotal}/45</Paper>
+                <Paper className="vert hort big-font">{count}/45</Paper>
             </Box>
         </Container>
     );
