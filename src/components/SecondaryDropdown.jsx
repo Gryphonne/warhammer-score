@@ -8,9 +8,8 @@ export default function ControllableStates() {
 
   return (
     <div className="mission-text">
-      <div className="mission-text">{(mission !== null) ? `${mission.category} : ${mission.description}` : 'Select a Secondary Objective'}</div>
       <Autocomplete
-      className="secondary-dropdown__input"
+        className="secondary-dropdown__input"
         disablePortal
         id="combo-box-demo"
         options={Object.values(SECONDARY_OBJECTIVES)}

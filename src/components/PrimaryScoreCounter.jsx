@@ -1,7 +1,7 @@
-import { Box, Button, Container, Paper } from '@mui/material';
-import { Add, Clear, Remove } from '@mui/icons-material';
+import { Box, Button, Container } from '@mui/material';
+import { Add, Remove } from '@mui/icons-material';
 import React, { useState, useContext } from 'react';
-import './styles/secondaryScoreCounter.css';
+import './styles/scoreFormatting.css';
 
 import { PrimaryScoreContext } from '../context/PrimaryScoreContext';
 
@@ -36,7 +36,7 @@ export default function PrimaryScoreCounter() {
                 <Button className="button" onClick={decrement} variant="contained" color="primary">
                     <Remove />
                 </Button>
-                <Paper className="ver hor big-font">{score}</Paper>
+                <h4 className="ver hor big-font">{score}</h4>
                 <Button className="button" onClick={increment} variant="contained" color="primary">
                     <Add />
                 </Button>

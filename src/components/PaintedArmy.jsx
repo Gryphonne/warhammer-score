@@ -1,6 +1,6 @@
 import { Box, Container, Checkbox } from '@mui/material';
 import React, { useState, useContext } from 'react';
-import './styles/secondaryScoreCounter.css';
+import './styles/scoreFormatting.css';
 
 import { PaintedContext } from '../context/PaintedContext';
 

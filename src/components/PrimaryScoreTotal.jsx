@@ -1,7 +1,7 @@
-import { Box, Container, Paper } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import React, { useContext } from 'react';
 
-import './styles/secondaryScoreTotal.css'
+import './styles/scoreFormatting.css'
 
 import { PrimaryScoreContext } from '../context/PrimaryScoreContext';
 
@@ -11,7 +11,7 @@ const PrimaryScoreTotal = () => {
     return (
         <Container>
             <Box className="flex-container">
-                <Paper className="vert hort big-font">{count}/45</Paper>
+                <h4 className="ver hor big-font">{count}/45</h4>
             </Box>
         </Container>
     );

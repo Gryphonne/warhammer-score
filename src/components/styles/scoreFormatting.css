@@ -1,0 +1,19 @@
+.flex-container { 
+    display: flex;
+    justify-content: right;
+}
+
+.ver {
+    padding: 0 1rem;
+    border-radius:5px;
+}
+
+.hor {
+    margin: 0 0rem;
+    width: 35px;
+}
+
+.big-font {
+    font-size: 1.6rem;
+    text-align: center;
+}
