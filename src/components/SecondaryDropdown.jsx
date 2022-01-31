@@ -10,8 +10,6 @@ export default function ControllableStates() {
     <div className="mission-text">
       <Autocomplete
         className="secondary-dropdown__input"
-        disablePortal
-        id="combo-box-demo"
         options={Object.values(SECONDARY_OBJECTIVES)}
         sx={{ width: 300 }}
         renderInput={(params) => <TextField {...params} />}

@@ -9,9 +9,9 @@ const SecondaryScoreTotal = () => {
     const [count] = useContext(SecondaryScoreContext);
 
     return (
-        <Container>
-            <Box className="flex-container">
-                <h4 className="ver hor big-font">{count}/45</h4>
+        <Container className="flex-tot-container">
+            <Box>
+                <h4 className="ver-tot hor-tot big-font-tot">{count}/45</h4>
             </Box>
         </Container>
     );

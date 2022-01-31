@@ -1,4 +1,4 @@
-.flex-container { 
+.flex-tot-container { 
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -6,16 +6,23 @@
     height: 44px;
 }
 
-.ver {
+.flex-tot-box { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+}
+
+.ver-tot {
     padding: 0 1rem;
 }
 
-.hor {
-    margin: 0 0rem;
-    width: 40px;
+.hor-tot {
+    width: 70px;
 }
 
-.big-font {
+.big-font-tot {
     font-size: 1.5rem;
     text-align: center;
     align-items: center;
