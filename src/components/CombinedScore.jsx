@@ -1,7 +1,7 @@
-import { Box, Container, Paper } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import React, { useContext } from 'react';
 
-import './styles/secondaryScoreTotal.css'
+import './styles/totalScoreFormatting.css'
 
 import { PrimaryScoreContext } from '../context/PrimaryScoreContext';
 import { SecondaryScoreContext } from '../context/SecondaryScoreContext';
@@ -13,9 +13,9 @@ const CombinedScore = () => {
     const [countPainted] = useContext(PaintedContext);
 
     return (
-        <Container>
-            <Box className="flex-container">
-                <Paper className="vert hort big-font">{countPrimary + countSecondary + countPainted}/100</Paper>
+        <Container className="flex-tot-container">
+            <Box>
+                <h4 className="ver-tot hor-tot big-font-tot">{countPrimary + countSecondary + countPainted}/100</h4>
             </Box>
         </Container>
     );

@@ -8,10 +8,10 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#d3d3d3"
+      main: "#27c49a"
     },
     secondary: {
-      main: "#ffcc80"
+      main: "#b1b1b1"
     }
   }
 });
@@ -20,7 +20,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <App />
-    </ThemeProvider>,
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

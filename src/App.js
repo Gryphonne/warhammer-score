@@ -16,52 +16,66 @@ import { PaintedProvider } from './context/PaintedContext';
 function App() {
 
   return (
-    <SecondaryScoreProvider>
-      <PrimaryScoreProvider>
-      <PaintedProvider>
-      <div className="App">
-        <div className="player-container">
-          <div className="score-container">
-            <h3>Command Points Playername1</h3><CommandPoints />
-            <h3>Battle Round 2</h3><PrimaryScoreCounter />
-            <h3>Battle Round 3</h3><PrimaryScoreCounter />
-            <h3>Battle Round 4</h3><PrimaryScoreCounter />
-            <h3>Battle Round 5</h3><PrimaryScoreCounter />
-            <SecondaryDropdown />
-            <SecondaryScoreCounter />
-            <SecondaryDropdown />
-            <SecondaryScoreCounter />
-            <SecondaryDropdown />
-            <SecondaryScoreCounter />
-            <h3>Secondary Points Total</h3><SecondaryScoreTotal />
-            <h3>Primary Points Total</h3><PrimaryScoreTotal />
-            <h3>Painted Army</h3><PaintedArmy/>
-            <h3>Total</h3><CombinedScore />
-            
-          </div>
 
-          <div className="score-container">
-          <h3>Command Points Playername2</h3><CommandPoints />
-            <h3>Battle Round 2</h3><PrimaryScoreCounter />
-            <h3>Battle Round 3</h3><PrimaryScoreCounter />
-            <h3>Battle Round 4</h3><PrimaryScoreCounter />
-            <h3>Battle Round 5</h3><PrimaryScoreCounter />
-            <SecondaryDropdown />
-            <SecondaryScoreCounter />
-            <SecondaryDropdown />
-            <SecondaryScoreCounter />
-            <SecondaryDropdown />
-            <SecondaryScoreCounter />
-            <h3>Secondary Points Total</h3><SecondaryScoreTotal />
-            <h3>Primary Points Total</h3><PrimaryScoreTotal />
-            <h3>Painted Army</h3><PaintedArmy/>
-            <h3>Total</h3><CombinedScore />
-          </div>
-        </div>
+    <div className="App">
+      <div className="player-container">
+        <SecondaryScoreProvider>
+          <PrimaryScoreProvider>
+            <PaintedProvider>
+              <div className="score-container--left">
+                <h3>Player 1</h3>
+                <div className="score-container__item"><h4>Command Points</h4><CommandPoints /></div>
+                <div className="score-container__item"><h4>Battle Round 2</h4><PrimaryScoreCounter /></div>
+                <div className="score-container__item"><h4>Battle Round 3</h4><PrimaryScoreCounter /></div>
+                <div className="score-container__item"><h4>Battle Round 4</h4><PrimaryScoreCounter /></div>
+                <div className="score-container__item"><h4>Battle Round 5</h4><PrimaryScoreCounter /></div>
+                <div className="score-container__points-container">
+                <div className="score-container__item--points"><h4>Primary Points Total</h4><PrimaryScoreTotal /></div>
+                </div>
+                <div className="score-container__item--objective"><SecondaryDropdown /><SecondaryScoreCounter /></div>
+                <div className="score-container__item--objective"><SecondaryDropdown /><SecondaryScoreCounter /></div>
+                <div className="score-container__item--objective"><SecondaryDropdown /><SecondaryScoreCounter /></div>
+                <div className="score-container__points-container">
+                  <div className="score-container__item--points"><h4>Secondary Points Total</h4><SecondaryScoreTotal /></div>
+                  </div>
+                  <div className="score-container__points-container">
+                  <div className="score-container__item--points"><h4>Painted Army</h4><PaintedArmy /></div>
+                  <div className="score-container__item--points"><h4>Total</h4><CombinedScore /></div>
+                </div>
+              </div>
+            </PaintedProvider>
+          </PrimaryScoreProvider>
+        </SecondaryScoreProvider>
+
+        <SecondaryScoreProvider>
+          <PrimaryScoreProvider>
+            <PaintedProvider>
+              <div className="score-container--left">
+                <h3>Player 1</h3>
+                <div className="score-container__item"><h4>Command Points</h4><CommandPoints /></div>
+                <div className="score-container__item"><h4>Battle Round 2</h4><PrimaryScoreCounter /></div>
+                <div className="score-container__item"><h4>Battle Round 3</h4><PrimaryScoreCounter /></div>
+                <div className="score-container__item"><h4>Battle Round 4</h4><PrimaryScoreCounter /></div>
+                <div className="score-container__item"><h4>Battle Round 5</h4><PrimaryScoreCounter /></div>
+                <div className="score-container__points-container">
+                <div className="score-container__item--points"><h4>Primary Points Total</h4><PrimaryScoreTotal /></div>
+                </div>
+                <div className="score-container__item--objective"><SecondaryDropdown /><SecondaryScoreCounter /></div>
+                <div className="score-container__item--objective"><SecondaryDropdown /><SecondaryScoreCounter /></div>
+                <div className="score-container__item--objective"><SecondaryDropdown /><SecondaryScoreCounter /></div>
+                <div className="score-container__points-container">
+                  <div className="score-container__item--points"><h4>Secondary Points Total</h4><SecondaryScoreTotal /></div>
+                  </div>
+                  <div className="score-container__points-container">
+                  <div className="score-container__item--points"><h4>Painted Army</h4><PaintedArmy /></div>
+                  <div className="score-container__item--points"><h4>Total</h4><CombinedScore /></div>
+                </div>
+              </div>
+            </PaintedProvider>
+          </PrimaryScoreProvider>
+        </SecondaryScoreProvider>
       </div>
-      </PaintedProvider>
-      </PrimaryScoreProvider>
-      </SecondaryScoreProvider>
+    </div>
   );
 }
 

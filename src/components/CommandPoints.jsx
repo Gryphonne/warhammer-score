@@ -1,7 +1,7 @@
-import { Box, Button, Container, Paper } from '@mui/material';
-import { Add, Clear, Remove } from '@mui/icons-material';
+import { Box, Button, Container } from '@mui/material';
+import { Add, Remove } from '@mui/icons-material';
 import React, { useState } from 'react';
-import './styles/secondaryScoreCounter.css';
+import './styles/scoreFormatting.css';
 
 export default function CommandPoints() {
     const [commandPoints, setCommandPoints] = useState(0);
@@ -21,11 +21,11 @@ export default function CommandPoints() {
     return (
         <Container>
             <Box className="flex-container">
-                <Button className="button" onClick={decrement} variant="contained" color="primary">
+                <Button className="button" onClick={decrement} variant="contained" color="primary" size="small">
                     <Remove />
                 </Button>
-                <Paper className="ver hor big-font">{commandPoints}</Paper>
-                <Button className="button" onClick={increment} variant="contained" color="primary">
+                <h4 className="ver hor big-font">{commandPoints}</h4>
+                <Button className="button" onClick={increment} variant="contained" color="primary" size="small">
                     <Add />
                 </Button>
             </Box>

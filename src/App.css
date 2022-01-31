@@ -1,24 +1,64 @@
-.App {
+h1 {
   text-align: center;
 }
 
-.player-container {
-  background-color: #eeeeee;
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 0.5rem;
+h4 {
+  text-align: left;
+  margin-left: 16px;
+  width:100%
 }
 
-.score-container {
-  background-color: #eeeeee;
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 0.5rem;
-  grid-gap: 1rem;
+.player-container { 
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
-.total-score-container {
-  background-color: #f10808;
-  display: grid;
-  grid-template-columns: auto auto;
+.score-container--left {
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.score-container--right{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.score-container__item {
+  background-color: #222326;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.score-container__item--objective {
+  background-color: #222326;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.score-container__item--points {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.score-container__points-container {
+  border: #414c50 solid 2px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  border-radius: 8px;
 }
