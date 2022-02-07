@@ -13,11 +13,7 @@ const CombinedScore = () => {
     const [countPainted] = useContext(PaintedContext);
 
     return (
-        <Container className="flex-tot-container">
-            <Box>
-                <h4 className="ver-tot hor-tot big-font-tot">{countPrimary + countSecondary + countPainted}/100</h4>
-            </Box>
-        </Container>
+        <h4 className="h2-tot">{countPrimary + countSecondary + countPainted}/100</h4>
     );
 }
 

@@ -1,29 +1,8 @@
-.flex-tot-container { 
+.h2-tot {
     display: flex;
-    flex-direction: row;
+    margin: 0 0rem;
     justify-content: right;
-    align-items: center;
-    height: 44px;
-}
-
-.flex-tot-box { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 44px;
-}
-
-.ver-tot {
-    padding: 0 1rem;
-}
-
-.hor-tot {
-    width: 70px;
-}
-
-.big-font-tot {
-    font-size: 1.5rem;
-    text-align: center;
-    align-items: center;
-}
+    margin-right: 32px;
+    font-weight: bold;
+    font-size:1.5rem;
+  }

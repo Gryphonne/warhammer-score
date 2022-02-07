@@ -21,11 +21,11 @@ export default function CommandPoints() {
     return (
         <Container>
             <Box className="flex-container">
-                <Button className="button" onClick={decrement} variant="contained" color="primary" size="small">
+                <Button className="button" onClick={decrement} variant="contained" color="primary">
                     <Remove />
                 </Button>
                 <h4 className="ver hor big-font">{commandPoints}</h4>
-                <Button className="button" onClick={increment} variant="contained" color="primary" size="small">
+                <Button className="button" onClick={increment} variant="contained" color="primary">
                     <Add />
                 </Button>
             </Box>
